@@ -10,8 +10,8 @@ jobs:
     name: Publish Job
     runs-on: ubuntu-latest
     permissions:
-      id-token: write
       contents: read
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,3 +22,5 @@ jobs:
             registry-url: 'https://registry.npmjs.org'
       - name: Publish to npm
         run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
