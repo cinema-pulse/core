@@ -1,6 +1,6 @@
 {
   "name": "@cinema-pulse/core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Core utilities and shared setup",
   "type": "module",
   "publishConfig": {
@@ -19,6 +19,6 @@
     "@trivago/prettier-plugin-sort-imports": "^5.2.2"
   },
   "exports": {
-    "prettier": "./src/prettier.config.mjs"
+    "./prettier": "./src/prettier.config.mjs"
   }
 }
