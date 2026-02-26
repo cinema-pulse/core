@@ -16,6 +16,6 @@ export default {
         "decorators-legacy",
         "typescript"
     ],
-    importOrder: ["<THIRD_PARTY_MODULES>", "^@/(.*)$", "^../(.*)", "^./(.*))"],
+    importOrder: ["<THIRD_PARTY_MODULES>", "^@/(.*)$", "^../(.*)", "^\\./(.*)" ],
     plugins: ["@trivago/prettier-plugin-sort-imports"]
 }
